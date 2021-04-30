@@ -44,14 +44,11 @@ body {
     transform: translate(-3%, -1%);
 }
 
-.welcome {
-    color:#cccbcb;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 3.5vw;
-    text-shadow: 2px 2px 4px black;
+.features {
+    text-align: center;
+    color: orange;
+    padding:30px;
+    font-size:2vw;
 }
 
 .button {
@@ -84,19 +81,13 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.footerindex {
-    padding: 20px 0;
-    position: absolute;
-    bottom: 0;
+.graphicsdesc {
+    margin-left:4em;
+    margin-top:4.8em;
 }
 
-.inner_footer {
-    display: block;
-    margin: 0 auto;
-    width: 1100px;
-    height: 100%;
-    position: absolute;
-    bottom: 0;
+.gameplaydesc {
+    margin-left:3em;
 }
 
 .inner_footer .footer_third {
@@ -119,11 +110,12 @@ body {
     display: inline-block;
 }
 
-.footer {
-    z-index: 3;
-    padding: 20px 0;
-    position: relative;
-    bottom: 0;
+.corereqlist {
+    color:#DCDCDC;
+    text-align: center;
+    padding:0;
+    font-size: calc(10px + .5vw);
+    line-height:2.25em;
 }
 
 .navbarindex {
@@ -136,18 +128,22 @@ body {
     width: 100%;
 }
 
-.navbarli {
-    float: right;
-    font-weight: bold;
+.corespecs {
+    font-size:1.5vw;
+    color:orange;
+    text-align: center;
 }
 
-.navbarli a {
-    display: block;
-    color:#707070;
+.specstable {
+    font-size: calc(10px + .5vw);
+    padding:0;
+}
+
+.specstable, .specstable tr, .specstable tr th, .specstable tr td {
+    border: 1px solid #DCDCDC;
+    border-collapse: collapse;
+    color:#DCDCDC;
     text-align: center;
-    padding:1em;
-    font-size: .75vw;
-    text-decoration: none;
 }
 
 .navbarli a:hover {
@@ -156,15 +152,10 @@ body {
 
 .navbar {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    position: fixed;
-    z-index: 3;
-    top: 0;
-    width: 100%;
-    height: 8%;
-    background-color: rgb(26, 26, 26);
+    margin:2vw;
+    padding:0;
+    font-size: calc(10px + .5vw);
+    line-height:2.25em;
 }
 
 .sidenavleft {
@@ -178,12 +169,10 @@ body {
     padding-top: 5.5vw;
 }
 
-.sidenavleft a {
-    padding: 8px 8px 8px 20px;
-    text-decoration: none;
-    font-size: 1vw;
-    color: #818181;
-    display: block;
+.installingfnv {
+    margin:2vw;
+    color:orange;
+    font-size:1.5vw;
 }
 
 .sidenavleft a:hover {
@@ -201,20 +190,17 @@ body {
     padding-top: 5.5vw;
 }
 
-.sidenavright a {
-    padding: 8px 8px 8px 20px;
-    text-decoration: none;
-    font-size: 1vw;
-    color: #818181;
-    display: block;
+.active, .accordioninstall:hover {
+    background-color:#303030;
+    transition: 0.4s;
 }
 
-.sidenavright ul {
-    padding: 0px 0px 0px 17px;
-    font-size: 0vw;
-    text-decoration: none;
-    color: #818181;
-    display: block;
+.accordioninstall:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
 }
 
 .sidenavright a:hover {
@@ -235,21 +221,15 @@ body {
     z-index: 4;
     margin: 0;
     padding:0;
-    overflow: hidden;
-    position: fixed;
-    font-size: 1vw;
-    top: 3%;
-    left: 4%;
-    transform: translate(-1.25%, -4%);
+    font-size: calc(10px + .5vw);
+    line-height:2.25em;
 }
 
-.maintitle img {
-    width:2%;
-    position: fixed;
-    top: 1.35%;
-    left: 1%;
-    z-index: 4;
-    transform: translate(-3%, -1%);
+.steammove li {
+    color:#DCDCDC;
+    padding:0;
+    font-size: calc(10px + .5vw);
+    line-height:2.25em;
 }
 
 .backarrow {
@@ -262,13 +242,24 @@ body {
     margin-left:63vw;
 }
 
-.fullheader {
-    margin-top:6vw;
-    margin-right: 12vw;
-    margin-left: 12vw;
+.steamverify p {
+    color:#DCDCDC;
+    padding:0;
+    font-size: calc(10px + .5vw);
+    line-height:2.25em;
+}
+
+.deletelist {
+    color:#DCDCDC;
+    padding:0;
+    font-size: calc(10px + .5vw);
+    line-height:2.25em;
+}
+
+.modfolder {
+    margin:2vw;
     color:orange;
-    font-size: calc(22.5px + 1vw);
-    word-wrap: breakword;
+    font-size: calc(10px + .5vw);
 }
 
 .fullheader p {
@@ -280,28 +271,29 @@ body {
     word-wrap: break-word;
 }
 
-.subheader {
-    margin: 1.35vw 12vw;
-    color:#DCDCDC;
-    font-size: calc(10px + 1vw);
-    word-wrap: break-word;
+.modfolderlist {
+    margin:0 2vw;
 }
 
-.subheader::before {
-    display: block;
-    content: " ";
-    margin-top: -200px;
-    height: 200px;
-    visibility: hidden;
-    pointer-events: none;
+.modfolderlist li {
+    color:#DCDCDC;
+    padding:0;
+    font-size: calc(10px + .5vw);
+    line-height:2.25em;
+}
+
+.overlay {
+    color:orange;
+    font-size: calc(12px + .5vw);
+    margin:2vw;
 }
 
 .subparagraph {
     color:#DCDCDC;
-    margin:0 12vw;
-    padding-right: 15vw;
-    font-size: calc(10px + .45vw);
-    line-height:1.75em;
+    list-style-type: none;
+    font-size: calc(10px + .5vw);
+    line-height:2.25em;
+    padding:0 2em;
 }
 
 .subparagraph h2 {
@@ -311,51 +303,47 @@ body {
 .subparagraph a {
     color:rgb(51, 122, 183);
     text-decoration: none;
-    font-size: calc(10px + .45vw);
+    font-size: calc(12px + .5vw);
 }
 
 .subparagraph a:hover {
     text-decoration: underline;
 }
 
-.standard_ul {
+.specialinstall {
+    margin-left:2vw;
+    margin-top:-.75em;
+    font-size: calc(10px + .5vw);
+    color:orange;
+}
+
+.specialinstructions {
+    font-size: calc(10px + .5vw);
     color:#DCDCDC;
-    margin:0 12vw;
-    padding-right: 15vw;
-    font-size: calc(10px + .45vw);
-    line-height:1.75em;
+    margin-left:2vw;
+    line-height:2.25em;
 }
 
-.standard_ul li {
-  padding: .2vw;
-}
-
-.standard_ul a {
+.modsublink {
     color:rgb(51, 122, 183);
     text-decoration: none;
-    font-size: calc(10px + .45vw);
+    font-size: calc(10px + .5vw);
 }
 
 .standard_ul a:hover {
     text-decoration: underline;
 }
 
-.smallheader {
-    margin: 1vw 12vw;
-    margin-top:1.4vw;
+.moddesc {
+    font-size: calc(10px + .5vw);
     color:#DCDCDC;
-    font-size: calc(15px + .45vw);
-    word-wrap: break-word;
+    padding: 0 1.95em;
     line-height:1.75em;
 }
 
-.smallheader::before {
-    display: block;
-    content: " ";
-    margin-top: -200px;
-    height: 200px;
-    visibility: hidden;
-    pointer-events: none;
+.lootsort {
+    padding:0 .75em;
+    width:1.75%;
 }
 
 .internallink {
@@ -368,55 +356,114 @@ body {
 
 .blockquote {
     color:#DCDCDC;
-    background-color: rgb(52, 52, 54);
-    font-size: calc(10px + .3vw);
-    border-left: 6px solid rgb(218, 124, 3);
-    padding: 0 10px;
-    margin-left: 12vw;
-    margin-right:26vw;
-    line-height:1.75em;
+}
+  
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: #DCDCDC;
+    content: "/\00a0";
 }
 
 .blockquote a {
     color:rgb(51, 122, 183);
     text-decoration: none;
-    font-size: calc(10px + .3vw);
 }
 
 .blockquote a:hover {
     text-decoration: underline;
 }
 
-.standard_ol {
-    color:#DCDCDC;
-    margin:0 12vw;
-    padding-right: 15vw;
-    font-size: calc(10px + .45vw);
-    line-height:1.75em;
+.toc_container {
+    background: #f9f9f9 none repeat scroll 0 0;
+    border: 1px solid #aaa;
+    display: table;
+    font-size: 95%;
+    margin-bottom: 1em;
+    padding: 20px;
+    width: auto;
 }
 
-.standard_ol li {
-  padding: .2vw;
+.toc_title {
+    font-weight: 700;
+    text-align: center;
 }
 
-.standard_ol a {
-    color:rgb(51, 122, 183);
-    text-decoration: none;
-    font-size: calc(10px + .45vw);
+.toc_container li, .toc_container ul, .toc_container ul li{
+    list-style: outside none none !important;
 }
 
-.standard_ol a:hover {
+.toclink {
+    color:orange;
+    text-decoration:none;
+}
+
+a.toclink:hover {
     text-decoration: underline;
 }
 
-.smalllist {
-    font-size: .75vw;
-    line-height: 1.3em;
+#FOMODImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left:2vw;
 }
-
-.smallheader a {
-    padding-top: 1vw;
-    color:rgb(51, 122, 183);
+  
+#FOMODImg:hover {opacity: 0.7;}
+  
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9); 
+}
+  
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+  
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+  
+.modal-content, #caption { 
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+  
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+  
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+  
+.close:hover, .close:focus {
+    color: #bbb;
     text-decoration: none;
 }
 
@@ -433,13 +480,17 @@ body {
     word-wrap: break-word;
 }
 
-.install::before {
+#caption3 {
+    margin: auto;
     display: block;
-    content: " ";
-    margin-top: -200px;
-    height: 200px;
-    visibility: hidden;
-    pointer-events: none;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    animation-name: zoom;
+    animation-duration: 0.6s;
 }
 
 .imgsize {
@@ -458,45 +509,219 @@ strong {
     color:rgb(250, 173, 121);
 }
 
-.spoiler {
-    color:rgb(31, 31, 31);
-    background-color:rgb(31, 31, 31);
-    padding: 0 5px;
-}
-
-.spoiler:hover{
-    color:#DCDCDC;
-    background-color:rgb(52, 52, 54);
-    transition-duration: 300ms;
-}
-
-.sidenavrightgameplay {
-    height: 100%;
-    width: 10%;
-    position: fixed;
-    z-index: 2;
-    top: 0;
-    right: 0;
-    background-color: rgb(44, 44, 44);
-    padding-top: 5.5vw;
-}
-
-.sidenavrightgameplay a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 1.1vw;
-    color: #818181;
+#caption5 {
+    margin: auto;
     display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    animation-name: zoom;
+    animation-duration: 0.6s;
 }
 
-.sidenavrightgameplay ul {
-    padding: 0px 0px 0px 13px;
-    font-size: 0vw;
-    text-decoration: none;
-    color: #818181;
+#FOMODImg6 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left:2vw;
+}
+  
+#FOMODImg6:hover {opacity: 0.7;}
+
+#caption6 {
+    margin: auto;
     display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    animation-name: zoom;
+    animation-duration: 0.6s;
 }
 
-.sidenavrightgameplay a:hover {
-    color: #DCDCDC;
+#FOMODImg7 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left:2vw;
+}
+  
+#FOMODImg7:hover {opacity: 0.7;}
+
+#caption7 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+#FOMODImg8 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left:2vw;
+}
+  
+#FOMODImg8:hover {opacity: 0.7;}
+
+#caption8 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+#FOMODImg9 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left:2vw;
+}
+  
+#FOMODImg9:hover {opacity: 0.7;}
+
+#caption9 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+#FOMODImg10 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left:2vw;
+}
+  
+#FOMODImg10:hover {opacity: 0.7;}
+
+#caption10 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+#FOMODImg11 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left:2vw;
+}
+  
+#FOMODImg11:hover {opacity: 0.7;}
+
+#caption11 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+#FOMODImg12 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left:2vw;
+}
+  
+#FOMODImg12:hover {opacity: 0.7;}
+
+#caption12 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+#FOMODImg13 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left:2vw;
+}
+  
+#FOMODImg13:hover {opacity: 0.7;}
+
+#caption13 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+#FOMODImg14 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left:2vw;
+}
+  
+#FOMODImg14:hover {opacity: 0.7;}
+
+#caption14 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+.unclickable {
+    color:orange;
+    font-size:1.5vw;
+    cursor: not-allowed;	
 }
